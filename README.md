@@ -51,7 +51,7 @@ SAROHub/
 ├── javascript/       → Client-side scripts  
 ├── php/              → Backend logic (fines, registration)  
 ├── phpmailer/        → PHPMailer library  
-├── saro_hub.sql      → Database file  
+├── db/     → Database file  
 ├── *.php / *.html    → Main pages (home, events, login, register, etc.)  
 ```
 
@@ -71,6 +71,34 @@ mysql -u root -p saro_hub < saro_hub.sql
 ## 🚀 Live Demo
 
 🔗 [View Live Project](https://your-deployed-link.com)  
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Home Page Overview
+![Home](images/screenshots/home.png)
+
+### 🎯 Mission, Vision & Features
+![Mission](images/screenshots/features-mission.png)
+
+### 📆 Meetings Section
+![Meetings](images/screenshots/meetings.png)
+
+### 💸 Fine Submission
+![Fines](images/screenshots/fines.png)
+
+### 🆘 Emergency Donations
+![Donations](images/screenshots/donations.png)
+
+### 📅 Events
+![Events](images/screenshots/events.png)
+
+### 💪 ₹1 Donation Challenges
+![Challenges](images/screenshots/challenges.png)
+
+### 👤 Profile Dashboard
+![Profile](images/screenshots/profile.png)
 
 
 ---
