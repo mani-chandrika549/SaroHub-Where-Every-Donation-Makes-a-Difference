@@ -72,6 +72,8 @@ mysql -u root -p saro_hub < saro_hub.sql
 
 🔗 [View Live Project](https://saroclub.infinityfreeapp.com) 
 
+> ⚠️ **Note:** UPI donations work only on mobile devices. Please access the donation pages from your phone.
+
 ---
 
 ## 📸 Screenshots
