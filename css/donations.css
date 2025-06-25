@@ -1,0 +1,144 @@
+/* General styles for donations page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+
+#emergency-donations {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.donation-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.donation-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.donation-card .donation-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.donation-card .donation-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.donation-card .donation-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.donation-card .donation-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.donation-card .donation-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.donate-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donate-btn:hover {
+    background-color: #218838;
+}
+
+.donation-form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.donation-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.donation-form form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.donation-form form input, .donation-form form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.donation-form form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donation-form form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    
+
+    .donation-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donation-card .donation-image {
+        max-width: 100%;
+    }
+
+    .donation-card .donation-text {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .donation-container {
+        padding: 15px;
+    }
+
+    .donation-form {
+        padding: 15px;
+    }
+
+    .donate-btn {
+        padding: 12px 25px;
+    }
+
+    
+}

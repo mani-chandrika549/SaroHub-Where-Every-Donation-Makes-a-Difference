@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saro Connect - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f8fb;
+    }
+
+    /* Header */
+    header {
+      background-color: #004d4d;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .heading {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    .logo {
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* Donation Section */
+    .donation-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .donation-container h2 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 30px;
+    }
+
+    .donation-card {
+      display: flex;
+      flex-wrap: wrap;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .donation-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .donation-image img {
+      width: 300px;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .donation-text {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .donation-text h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    .donation-description {
+      color: #333;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .donate-btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .donate-btn:hover {
+      background: linear-gradient(135deg, #0056b3, #004080);
+    }
+
+    /* Footer */
+    .footer-container {
+      background-color: #002e2e;
+      color: white;
+      padding: 20px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #444;
+    }
+
+    .footer-links,
+    .logo-section {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links a,
+    .logo-section a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover,
+    .logo-section a:hover {
+      color: #f4b400;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .donation-card {
+        flex-direction: column;
+      }
+
+      .donation-image img {
+        width: 100%;
+        height: auto;
+      }
+
+      header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+      }
+
+      .heading {
+        font-size: 1.4rem;
+      }
+
+      .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .footer-links,
+      .logo-section {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1 class="heading">Save a Rupee Organisation (SARO)</h1>
+  <a href="profile.php">
+    <img src="images/profile.jpg" alt="Profile" class="logo" height="50" width="50"/>
+  </a>
+</header>
+
+<!-- Emergency Donations Section -->
+<!-- Emergency Donations Section -->
+<section id="emergency-donations">
+  <div class="donation-container">
+    <h2>Emergency Donations</h2>
+
+    <!-- Donation Card 1 -->
+    <div class="donation-card">
+      <div class="donation-image">
+        <img src="images/e1.png" alt="Emergency Donation Image" />
+      </div>
+      <div class="donation-text">
+        <h3>Help Ramya (ECE-3rd Year)</h3>
+        <p class="donation-description">
+          Ramya is currently undergoing surgery after a severe accident. Her family is struggling financially.
+          Every rupee can make a difference. You may donate any amount based on your capacity.
+        </p>
+        <button class="donate-btn" data-case="ramya">Donate Now</button>
+      </div>
+    </div>
+
+    <!-- Donation Card 2 -->
+    <div class="donation-card">
+      <div class="donation-image">
+        <img src="images/e2.png" alt="Emergency Donation Image" />
+      </div>
+      <div class="donation-text">
+        <h3>Support Mahesh (CSE-2nd Year)</h3>
+        <p class="donation-description">
+          Mahesh's father is in critical care and the family needs emergency funds for ICU bills.
+          Your kindness will be a big support. There is no fixed amount — contribute as you wish.
+        </p>
+        <button class="donate-btn" data-case="mahesh">Donate Now</button>
+      </div>
+    </div>
+
+    <!-- Donation Card 3 -->
+    <div class="donation-card">
+      <div class="donation-image">
+        <img src="images/e3.png" alt="Emergency Donation Image" />
+      </div>
+      <div class="donation-text">
+        <h3>Help Teja’s Family (Civil Dept.)</h3>
+        <p class="donation-description">
+          Teja lost his mother recently and the family is under financial stress. Your voluntary
+          donation can provide them some relief. Donate any amount you’re comfortable with.
+        </p>
+        <button class="donate-btn" data-case="teja">Donate Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  const donateBtns = document.querySelectorAll('.donate-btn');
+  donateBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const donationCase = btn.dataset.case;
+      window.location.href = `donate_payment.php?case=${encodeURIComponent(donationCase)}`;
+    });
+  });
+</script>
+
+<!-- Footer -->
+<footer class="footer-container">
+  <div class="footer-top">
+    <div class="footer-links">
+      <a href="home.php">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="logo-section">
+      <a href="logout.php">Logout</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 SRIT & Saro. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

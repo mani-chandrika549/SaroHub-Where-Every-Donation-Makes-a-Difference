@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saro Connect - Daily Challenges</title>
+  <style>
+    :root {
+      --saro-header: #004d4d;    /* HEADER same as Home */
+      --saro-footer: #002e2e;    /* FOOTER same as Home */
+      --saro-accent: #007BFF;
+      --saro-green: #28a745;
+      --text-light: #ffffff;
+      --text-dark: #333333;
+      --bg-light: #f4f4f4;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+
+    /* HEADER */
+    .img-heading-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: var(--saro-header);
+    }
+    .logo {
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid white;
+    }
+    .heading {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 1.5rem;
+      color: var(--text-light);
+      margin: 0;
+    }
+
+    /* CHALLENGES SECTION */
+    .challenges-container {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .challenges-container h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--saro-accent);
+    }
+    .challenge-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--bg-light);
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .challenge-text { flex: 1; padding: 10px; }
+    .challenge-text h3 { margin-top: 0; color: var(--text-dark); }
+    .challenge-description { color: #555; }
+    .register-btn, .start-btn {
+      margin-top: 10px;
+      margin-right: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .register-btn { background-color: var(--saro-accent); color: white; }
+    .start-btn { background-color: var(--saro-green); color: white; }
+    .challenge-image img {
+      width: 200px;
+      border-radius: 10px;
+    }
+    @media (max-width: 768px) {
+      .challenge-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .challenge-image img {
+        width: 100%;
+        margin-top: 15px;
+      }
+    }
+
+    /* FOOTER */
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      background-color: var(--saro-footer);
+      color: var(--text-light);
+      padding: 20px 0;
+    }
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .footer-links, .logo-section {
+      display: flex;
+      gap: 20px;
+    }
+    .footer-links a, .logo-section a {
+      text-decoration: none;
+      color: var(--text-light);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .footer-links a:hover, .logo-section a:hover {
+      color: var(--saro-accent);
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      padding-top: 10px;
+      border-top: 1px solid #444;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .img-heading-container {
+        flex-direction: column;
+      }
+      .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .heading {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="img-heading-container">
+      
+      <h1 class="heading">Save a Rupee Organisation (SARO)</h1>
+      <a href="profile.php">
+        <img src="images/profile.jpg" alt="Profile" class="logo" height="50" width="50">
+      </a>
+    </div>
+  </header>
+
+  <!-- DAILY CHALLENGES SECTION -->
+  <section id="daily-challenges">
+    <div class="challenges-container">
+      <h2>Daily Challenges</h2>
+
+      <!-- Challenge 1 -->
+<div class="challenge-card">
+  <div class="challenge-text">
+    <h3>30-Day Donation Challenge</h3>
+    <p class="challenge-description">
+      <strong>Motto:</strong> “Small coins, big change.”<br><br>
+      Donate ₹1 per day for 30 days. Build a consistent giving habit. Participants who complete all 30 days will be acknowledged for their dedication!
+    </p>
+    <button class="register-btn">Register Now</button>
+    <button class="start-btn" style="display: none;">Start Now</button>
+  </div>
+  <div class="challenge-image">
+    <img src="images/c1.png" alt="Challenge 1 Image">
+  </div>
+</div>
+
+<!-- Challenge 2 -->
+<div class="challenge-card">
+  <div class="challenge-text">
+    <h3>365-Day Kindness Challenge</h3>
+    <p class="challenge-description">
+      <strong>Motto:</strong> “A rupee a day keeps indifference away.”<br><br>
+      Commit to donating ₹1 daily for a full year. Your consistency supports countless causes. Finishers will receive a certificate of recognition from SARO.
+    </p>
+    <button class="register-btn">Register Now</button>
+    <button class="start-btn" style="display: none;">Start Now</button>
+  </div>
+  <div class="challenge-image">
+    <img src="images/c2.png" alt="Challenge 2 Image">
+  </div>
+</div>
+
+<!-- Challenge 3 -->
+<div class="challenge-card">
+  <div class="challenge-text">
+    <h3>90-Day Consistency Challenge</h3>
+    <p class="challenge-description">
+      <strong>Motto:</strong> “Drop by drop, the bucket fills.”<br><br>
+      Take the pledge to donate ₹2 daily for 90 days. It's not about the amount—it's about consistency and intention. Top consistent givers will be featured!
+    </p>
+    <button class="register-btn">Register Now</button>
+    <button class="start-btn" style="display: none;">Start Now</button>
+  </div>
+  <div class="challenge-image">
+    <img src="images/c3.png" alt="Challenge 3 Image">
+  </div>
+</div>
+
+    
+  </section>
+
+  <!-- JS -->
+  <script src="javascript/challenges.js"></script>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-links">
+          <a href="home.php">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="logo-section">
+          <a href="logout.php">Logout</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 SRIT & Saro. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

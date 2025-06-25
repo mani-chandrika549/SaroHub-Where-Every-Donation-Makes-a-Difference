@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saro Connect - Contact Us</title>
+  <script src="javascript/info-script.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f8fb;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #004d4d;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .heading {
+      font-size: 1.6rem;
+      margin: 0;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .logo {
+      border-radius: 50%;
+      object-fit: cover;
+      height: 50px;
+      width: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .heading {
+        font-size: 1.3rem;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    /* CONTACT SECTION */
+    .contact-container {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-radius: 10px;
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      font-size: 28px;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    .contact-info h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      color: #444;
+      margin: 8px 0;
+    }
+
+    .social-media {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .social-media a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    .social-media a:hover {
+      text-decoration: underline;
+      color: #0056b3;
+    }
+
+    /* FOOTER */
+    .footer-container {
+      background-color: #002e2e;
+      color: white;
+      padding: 20px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #444;
+    }
+
+    .footer-links, .logo-section {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .footer-links a, .logo-section a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .footer-links a:hover, .logo-section a:hover {
+      color: #f4b400;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="heading">Save a Rupee Organisation (SARO)</h1>
+    <a href="profile.php">
+      <img src="images/profile.jpg" alt="Profile" class="logo">
+    </a>
+  </header>
+
+  <!-- Contact Us Section -->
+  <section id="contact-us">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <h3>Ways to Reach Us</h3>
+        <p><strong>Email:</strong> info@saroconnect.com</p>
+        <p><strong>Phone:</strong> +123-456-7890</p>
+        <p><strong>Office Address:</strong> 123 SRIT Campus, City, Country</p>
+        <h4>Follow Us</h4>
+        <div class="social-media">
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          <a href="https://twitter.com" target="_blank">Twitter</a>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-container">
+    <div class="footer-top">
+      <div class="footer-links">
+        <a href="home.php">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="logo-section">
+        <a href="logout.php">Logout</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 SRIT & Saro. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
