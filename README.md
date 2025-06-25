@@ -78,7 +78,7 @@ mysql -u root -p saro_hub < saro_hub.sql
 
 
 ### 🏁 Landing Page (Choose Login or Register)
-![Landing](screenshots/landing.png)
+![Landing](images/screenshots/landing.png)
 
 ### 🏠 Home Page Overview
 ![Home](images/screenshots/home.png)
