@@ -70,7 +70,7 @@ mysql -u root -p saro_hub < saro_hub.sql
 
 ## 🚀 Live Demo
 
-🔗 [View Live Project]([https://your-deployed-link.com](https://saroclub.infinityfreeapp.com)  
+🔗 [View Live Project]([https://your-deployed-link.com](https://saroclub.infinityfreeapp.com])  
 
 ---
 
